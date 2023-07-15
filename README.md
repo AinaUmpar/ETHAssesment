@@ -35,7 +35,7 @@ contract MyToken {
 
 You will need to enter variables of your Token name and the Abbreviation of that token being a public domain which will assist you distinguish the Name and the Abbreviations.
 
-then begin by mapping the variable (using Address => uint as public balances). 
+then begin by mapping the variable using Address => uint as public balances. 
 uint is an unsigned int that does not support negative values and also does not add anything, resulting in a zero (0) value for the public variables specified in the code.
 
 ## 2nd Code
@@ -51,7 +51,7 @@ It's typically a good idea to make mapping variables public so that everyone may
 
 ## 3rd Code
 
-You must enter an address and a value that corresponds to the function that raises the overall supply by that number and increases the balance of the address by that amount in the mint section. Because it includes a parameter, it should have an address and a value (I did underscore address and underscore value (_address, _value) to distinguish the parameters from the regular values)
+You must enter an address and a value that corresponds to the function that raises the overall supply by that number and increases the balance of the address by that amount in the mint section. Because it includes a parameter, it should have an address and a value. I put underscore address and underscore value to distinguish the parameters from the regular values.
 
 ```javascript
 
@@ -84,7 +84,7 @@ The burn function is the inverse of the mint function in that it destroys tokens
 
 Finally, when the burn function is called, you must create a condition to ensure that the balance of the money you received is larger than or equal to the amount that is meant to be burnt and referring to the total supply and the balances together
 
-When you've linked everything, open the "solidity compiler" on the left side of remix.etherium.org (where you'll be conducting your compiling) and utilize the 'compile my token.sol' button. Once it is completed, it will appear at the bottom of the website with the words "it ran." 
+When you've linked everything, open the "solidity compiler" on the left side of remix.etherium.org and utilize the 'compile my token.sol' button. Once it is completed, it will appear at the bottom of the website with the words "it ran." 
 
 
 ## Running the Code
@@ -92,7 +92,7 @@ When you've linked everything, open the "solidity compiler" on the left side of 
 
 In addition, click the deploy and run tab, which is found underneath the solidity compiler button. When it opens, you'll notice an orange button labeled deploy, which allows you to check whether your token is available or not. You must first test the waters, i.e. the tokens within the 'deployed contracts'.
 
-Finally, and most crucially, you must copy your account that is pointed towards the depoly, perform transactions, copy paste it, and open the mint and burn below the deployed contracts. Putting them value and copying the account numbers you just acquired into the address form, as well as giving value to the value section. When run by the token abbrv, it will return the amount you just performed. And verifying it with the totalsupply section and the token abbrv, and you're done! That's mytoken's entirety process! 
+Finally, and most crucially, you must copy your account that is pointed towards the depoly, perform transactions, copy paste it, and open the mint and burn below the deployed contracts. Putting them value and copying the account numbers you just acquired into the address form, as well as giving value to the value section. When run by the token abbrv, it will return the amount you just performed. And verifying it with the totalsupply section and the token abbrv, and it's done.
 
 
    ### Guide
