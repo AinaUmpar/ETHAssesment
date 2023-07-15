@@ -76,11 +76,13 @@ In the second, we would need to do the burn and minting operations, which are es
         
     }
 
+}
+
 ```
 
-The burn function is the inverse of the mint function in that it destroys tokens (much like the mint function, it will accept an address in value) and eliminates the complete supply and balance from the address entirely. Copy and paste the same function, but execute it in the reverse direction by using the subtraction sign while the plus symbol is beneath it, and you have now received the burn function. You'll be utilizing the inverse, '-=' (A quick reminder that any negative integer, such as -1, will never be called in this part, thus the value will always be 0 or above.)
+The burn function is the inverse of the mint function in that it destroys tokens and eliminates the complete supply and balance from the address entirely. Copy and paste the same function, but execute it in the reverse direction by using the subtraction sign while the plus symbol is beneath it, and you have now received the burn function. You'll be utilizing the inverse, '-='.
 
-Finally, when the burn function is called, you must create a condition to ensure that the balance of the money you received is larger than or equal to the amount that is meant to be burnt. (using the if function to distinguish between the value you assigned to the mint and the one you're meant to burn) and referring to the total supply and the balances together
+Finally, when the burn function is called, you must create a condition to ensure that the balance of the money you received is larger than or equal to the amount that is meant to be burnt and referring to the total supply and the balances together
 
 When you've linked everything, open the "solidity compiler" on the left side of remix.etherium.org (where you'll be conducting your compiling) and utilize the 'compile my token.sol' button. Once it is completed, it will appear at the bottom of the website with the words "it ran." 
 
@@ -88,7 +90,7 @@ When you've linked everything, open the "solidity compiler" on the left side of 
 ## Running the Code
 
 
-The fourth thing to do is to click the deploy and run tab, which is found underneath the solidity compiler button. When it opens, you'll notice an orange button labeled deploy, which allows you to check whether your token is available or not. You must first test the waters, i.e. the tokens (abbrv, name, and total supply buttons) within the 'deployed contracts'.
+In addition, click the deploy and run tab, which is found underneath the solidity compiler button. When it opens, you'll notice an orange button labeled deploy, which allows you to check whether your token is available or not. You must first test the waters, i.e. the tokens within the 'deployed contracts'.
 
 Finally, and most crucially, you must copy your account that is pointed towards the depoly, perform transactions, copy paste it, and open the mint and burn below the deployed contracts. Putting them value and copying the account numbers you just acquired into the address form, as well as giving value to the value section. When run by the token abbrv, it will return the amount you just performed. And verifying it with the totalsupply section and the token abbrv, and you're done! That's mytoken's entirety process! 
 
